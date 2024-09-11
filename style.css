@@ -1,0 +1,229 @@
+ul li{
+    display: inline;
+}
+.container .column{
+    z-index: 99;
+}
+.header{
+    background-image: url("welcome-banner.jpg");
+    padding-bottom: 250px;
+}
+.column{
+    position: fixed;
+    width: 85%;
+    background-color: black;
+}
+.content a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding-right: 50px;
+}
+.content a:hover{
+    color:blue;
+}
+.logo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    font-family: serif;
+}
+.welcome-hero-txt{
+    text-align: center;
+    padding: 200px 100px;
+}
+.welcome-hero-txt h2{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 40px;
+    color: #fff;
+}
+.welcome-hero-txt p{
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+}
+.header .row{
+    padding: 20px;
+}
+.welcome-btn{
+    padding: 10px 40px;
+    text-transform: capitalize;
+    background-color: rgb(62, 109, 170);
+    color: #fff;
+    border-color: rgb(62, 109, 170);
+}
+.welcome-btn:hover{
+    background-color: blue;
+}
+.welcome-btn a{
+    color: #fff;
+    text-decoration: none;
+}
+.single-service-item{
+   border: 1px solid; 
+   text-align: center;
+   padding-bottom: 30px;
+}
+.single-service-item h2 a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:black;
+    font-size: 25px;
+}
+.single-service-icon{
+    font-size: 40px;
+    padding: 50px 0;
+}
+.single-service-item:hover{
+    color: #fff;
+    background-color: blue;
+}
+.single-service-item a:hover{
+    color: #fff;
+    background-color: blue;
+}
+#service{
+    padding-top: 100px;
+}
+span{
+    text-transform: none;
+}
+.section-header{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 50px;
+}
+.new-cars-txt a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+.single-new-cars-item{
+    padding-bottom: 50px;
+}
+#new-cars{
+    padding-top: 50px;
+}
+#features{
+    padding-top: 50px;
+}
+.car-1{
+    border-bottom:1px solid;
+    padding:30px;
+}
+.section-bottom{
+    border: 1px solid;
+}
+.featured-model-info p{
+    font-size: 12px;
+    color: #8c92a0;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 30px;
+}
+.car-2{
+    border-bottom:1px solid;
+    padding:30px;
+    padding-top: 50px;
+}
+.car-3{
+    border-bottom:1px solid;
+    padding:40px;
+}
+.car-4{
+    border-bottom:1px solid;
+    padding:30px;
+}
+.feature-column{
+    display: inline;
+}
+.featured-cars-txt h2 a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color:black ;
+}
+.featured-cars-txt h3{
+    font-size: 15px;
+}
+.contact {
+    background: #2a2d54;
+}
+.footer-top {
+    padding: 112px 0 72px;
+}
+.single-footer-widget {
+    margin-bottom: 40px;
+}
+.footer-logo a, .footer-logo a:hover, .footer-logo a:focus {
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-family: 'Rufina', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.single-footer-widget p {
+    font-size: 14px;
+    color: #eeeff6;
+    max-width: 300px;
+    margin: 40px 0 20px;
+}
+.footer-contact p {
+    margin: 0;
+    color: #d1d7e9;
+}
+.footer-social a:hover{
+    color: #fff;
+}
+.single-footer-widget {
+    margin-bottom: 40px;
+}
+.single-footer-widget h2 {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 43px;
+}
+.single-footer-widget ul {
+    list-style: none;
+    padding-left: 0;
+}
+.single-footer-widget ul li {
+    display:block;
+}
+.single-footer-widget ul li a {
+    font-size: 14px;
+    color: #cfd0e3;
+    font-weight: 300;
+    padding-bottom: 13px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.return-to-top{
+    display: block;
+    text-align:right;
+}
+.fa-arrow-up{
+    border: 1px hidden;
+    color: #fff;
+    background-color: blue;
+    padding: 10px;
+    margin: 10px 10px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    border-radius: 100%;
+}
+.fa-arrow-up:hover{
+    color: blue;
+    background-color: #fff;
+}
+.footer-copyright a{
+    text-decoration: none;
+}
