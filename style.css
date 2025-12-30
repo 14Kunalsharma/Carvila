@@ -1,70 +1,55 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+}
+
+body {
+    line-height: 1.6;
 }
 
 .header {
-    background-color: #333;
+    background: #111;
     color: #fff;
-    padding-bottom: 50px;
+    padding-bottom: 120px;
 }
 
 .logo a {
     color: #fff;
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 26px;
     text-decoration: none;
+    font-weight: bold;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.content ul {
+    list-style: none;
     display: flex;
-    gap: 20px;
+    justify-content: flex-end;
+    gap: 25px;
 }
 
-ul li a {
+.content ul li a {
     color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
-}
-
-ul li a:hover {
-    color: blue;
+    font-size: 15px;
 }
 
 .welcome-hero-txt {
     text-align: center;
-    padding: 150px 20px;
+    margin-top: 80px;
 }
 
 .welcome-hero-txt h2 {
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 40px;
-    color: #fff;
-}
-
-.welcome-hero-txt p {
-    font-weight: 500;
-    font-size: 16px;
-    color: #fff;
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
 .welcome-btn {
-    padding: 10px 40px;
-    text-transform: capitalize;
-    background-color: rgb(62, 109, 170);
-    color: #fff;
+    padding: 10px 30px;
+    background: #0d6efd;
     border: none;
-    cursor: pointer;
-}
-
-.welcome-btn:hover {
-    background-color: blue;
+    color: #fff;
 }
 
 .welcome-btn a {
@@ -72,161 +57,143 @@ ul li a:hover {
     text-decoration: none;
 }
 
+.service {
+    padding: 80px 0;
+}
+
 .single-service-item {
-    border: 1px solid #ccc;
     text-align: center;
-    padding: 30px 20px;
-    background-color: #fff;
-    transition: all 0.3s ease;
-}
-
-.single-service-item:hover {
-    background-color: blue;
-    color: #fff;
-}
-
-.single-service-item a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.single-service-item a:hover {
-    color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
 }
 
 .single-service-icon {
     font-size: 40px;
-    padding: 30px 0;
+    margin-bottom: 15px;
+    color: #0d6efd;
+}
+
+.new-cars {
+    padding: 80px 0;
 }
 
 .section-header {
     text-align: center;
-    padding: 50px 20px;
-    text-transform: capitalize;
+    margin-bottom: 50px;
 }
 
-.new-cars-txt a {
+.new-cars-img img {
+    width: 100%;
+    height: auto;
+}
+
+.new-cars-txt h2 a {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
-.single-new-cars-item {
-    padding: 50px 0;
+.new-cars-btn {
+    margin-top: 15px;
 }
 
-#searchInput {
-    width: 50%;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+.features {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.search-container {
+    text-align: center;
     margin-bottom: 30px;
 }
 
-.feature-column {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px 0;
+#searchInput {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
 }
 
 .feature-column .col-3 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
 }
 
-.feature-column .col-3 img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.featured-cars-txt h2 a,
-.featured-cars-txt h3,
-.featured-cars-txt p {
-    margin: 5px 0;
+.section-bottom {
+    border: 1px solid #ddd;
+    padding: 15px;
     text-align: center;
+    height: 100%;
+}
+
+.section-bottom img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.featured-model-info {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.featured-cars-txt {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 15px;
+    height: 100%;
 }
 
 .featured-cars-txt h2 a {
     text-decoration: none;
-    font-size: 20px;
-    color: black;
+    color: #000;
+    font-size: 18px;
 }
 
 .featured-cars-txt h3 {
-    font-size: 15px;
+    color: #0d6efd;
+    margin: 10px 0;
 }
 
 .contact {
-    background-color: #2a2d54;
+    background: #2a2d54;
     color: #fff;
-    padding: 50px 20px;
-}
-
-.footer-top {
-    padding: 50px 0;
-}
-
-.single-footer-widget {
-    margin-bottom: 40px;
+    padding-top: 60px;
 }
 
 .footer-logo a {
     color: #fff;
-    font-size: 24px;
-    letter-spacing: 3px;
-    font-family: 'Rufina', serif;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-size: 22px;
     text-decoration: none;
 }
 
-.single-footer-widget p {
-    font-size: 14px;
-    color: #eeeff6;
-    max-width: 300px;
-    margin: 20px 0;
+.single-footer-widget h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
-.footer-contact p {
-    margin: 0;
-    color: #d1d7e9;
+.single-footer-widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.single-footer-widget ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .footer-social a {
-    margin-right: 10px;
-    color: #cfd0e3;
-    text-decoration: none;
-}
-
-.footer-social a:hover {
     color: #fff;
+    margin-left: 10px;
+    font-size: 18px;
 }
 
 .footer-copyright {
-    text-align: center;
-    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 40px;
+    padding: 20px 0;
 }
 
-.fa-arrow-up {
+.return-to-top a {
     color: #fff;
-    background-color: blue;
-    padding: 10px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.fa-arrow-up:hover {
-    color: blue;
-    background-color: #fff;
+    font-size: 20px;
 }
