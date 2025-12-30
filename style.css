@@ -1,7 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
 a {
@@ -43,7 +45,6 @@ ul {
     color: #007bff;
 }
 
-/* Welcome Hero */
 .welcome-hero-txt {
     text-align: center;
     padding: 80px 20px;
@@ -79,12 +80,13 @@ ul {
 
 .service {
     padding: 60px 0;
+    background: #fff;
 }
 
 .single-service-item {
     text-align: center;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: 0.3s;
 }
 
@@ -98,65 +100,50 @@ ul {
     margin-bottom: 15px;
 }
 
-.single-service-item h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-}
-
-.single-service-item p {
-    font-size: 14px;
-    color: #555;
-}
-
 .new-cars {
     padding: 60px 0;
 }
 
 .section-header p {
+    text-align: center;
     font-size: 16px;
     color: #007bff;
     margin-bottom: 5px;
 }
 
 .section-header h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
 }
 
-.single-new-cars-item {
+.new-cars-content .single-new-cars-item {
     margin-bottom: 50px;
 }
 
 .new-cars-img img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
-.new-cars-txt h2 a {
-    font-size: 22px;
-    color: #333;
+.new-cars-txt h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
     text-transform: capitalize;
 }
 
 .new-cars-txt p {
-    color: #555;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.new-cars-para2 {
-    font-size: 13px;
-    color: #777;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .new-cars-btn {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .features {
     padding: 60px 0;
+    background: #f8f9fa;
 }
 
 .search-container {
@@ -165,70 +152,41 @@ ul {
 }
 
 #searchInput {
-    padding: 10px 15px;
     width: 50%;
-    border-radius: 5px;
+    padding: 10px 15px;
     border: 1px solid #ccc;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-#searchInput:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0,123,255,0.3);
-}
-
-.feature-column .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    border-radius: 5px;
 }
 
 .feature-column .col-3 {
-    flex: 0 0 23%;
-    box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
-.feature-column .col-3 img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.feature-column .col-3 img:hover {
-    transform: scale(1.05);
-}
-
-.featured-cars-txt h2 a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-}
-
-.featured-cars-txt h2 a:hover {
-    color: #007bff;
+.featured-cars-txt h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .featured-cars-txt h3 {
     color: #007bff;
-    margin: 5px 0;
+    margin-bottom: 10px;
 }
 
 .featured-cars-txt p {
-    color: #555;
     font-size: 14px;
-    line-height: 1.6;
+}
+
+.featured-model-info p {
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
 }
 
 .contact {
+    padding: 60px 0;
     background: #222;
     color: #fff;
-    padding: 60px 0;
-}
-
-.single-footer-widget {
-    margin-bottom: 30px;
 }
 
 .single-footer-widget h2 {
@@ -237,42 +195,17 @@ ul {
     text-transform: capitalize;
 }
 
-.single-footer-widget p {
+.single-footer-widget p,
+.single-footer-widget ul li {
     font-size: 14px;
-    color: #ccc;
-    line-height: 1.6;
+    margin-bottom: 8px;
 }
 
 .footer-contact p {
-    margin: 5px 0;
-}
-
-.footer-logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #007bff;
-}
-
-.footer-logo a:hover {
-    color: #fff;
-}
-
-.footer-newsletter input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: none;
-}
-
-.footer-copyright {
-    border-top: 1px solid #333;
-    padding-top: 20px;
-    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 .footer-social a {
-    display: inline-block;
     color: #fff;
     margin-right: 10px;
     font-size: 16px;
@@ -283,11 +216,30 @@ ul {
     color: #007bff;
 }
 
+.hm-foot-email {
+    display: flex;
+    margin-top: 10px;
+}
+
+.foot-email-box input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.foot-email-subscribe a {
+    padding: 8px 12px;
+    background: #007bff;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    display: inline-block;
+}
+
 #scroll-Top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: none;
 }
 
 .return-to-top a {
@@ -295,13 +247,10 @@ ul {
     color: #fff;
     padding: 10px 12px;
     border-radius: 50%;
+    display: inline-block;
     font-size: 16px;
-    transition: 0.3s;
 }
 
-.return-to-top a:hover {
-    background: #0056b3;
-}
 
 @media (max-width: 992px) {
     .nav ul {
@@ -324,3 +273,4 @@ ul {
         flex: 0 0 100%;
     }
 }
+
