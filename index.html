@@ -88,19 +88,20 @@
                     <div class="col-5">
                         <div class="new-cars-txt">
                             <h2><a href="bmw-series-3-wagon.html">BMW Series-3 Wagon</a></h2>
-                            <p>The BMW Series 3 Wagon is versatile and sporty.</p>
+                            <p>The BMW Series 3 Wagon, also known as the BMW 3 Series Touring, is versatile and sporty.</p>
                             <p class="new-cars-para2">Known for its precise steering and balanced handling...</p>
                             <button class="welcome-btn new-cars-btn" onclick="window.location.href='bmw-series-3-wagon.html'">View Details</button>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="single-new-cars-item">
                 <div class="row">
                     <div class="col-5">
                         <div class="new-cars-txt">
                             <h2><a href="chevrolet-camaro.html">Chevrolet Camaro ZA100</a></h2>
-                            <p>The Chevrolet Camaro is a well-known American muscle car.</p>
+                            <p>The Chevrolet Camaro is a well-known American muscle car...</p>
                             <p class="new-cars-para2">Known for its aggressive performance and handling...</p>
                             <button class="welcome-btn new-cars-btn" onclick="window.location.href='chevrolet-camaro.html'">View Details</button>
                         </div>
@@ -112,6 +113,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="single-new-cars-item">
                 <div class="row">
                     <div class="col-7">
@@ -122,7 +124,7 @@
                     <div class="col-5">
                         <div class="new-cars-txt">
                             <h2><a href="bmw-series-3-wagon2.html">BMW Series-3 Wagon</a></h2>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
                             <p class="new-cars-para2">Sed ut persp unde omnis iste natus error sit voluptatem...</p>
                             <button class="welcome-btn new-cars-btn" onclick="window.location.href='bmw-series-3-wagon2.html'">View Details</button>
                         </div>
@@ -136,44 +138,76 @@
 <section id="features" class="features">
     <div class="container">
         <div class="section-header">
-            <p>Check out <span>the</span> latest cars</p>
-            <h2>Featured Cars</h2>
+            <p>checkout <span>the</span> latest cars</p>
+            <h2>featured cars</h2>
         </div>
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search cars...">
+        <div class="search-container" style="text-align:center; margin-bottom:30px;">
+            <input type="text" id="searchInput" placeholder="Search cars..." onkeyup="searchCars()" style="padding:10px; width:50%; border-radius:5px; border:1px solid #ccc;">
         </div>
+
         <div class="feature-column" id="featuredCars">
             <div class="row">
-                <div class="col-3 featured-car">
-                    <img src="fc1.png" alt="BMW 6 Series Gran Coupe">
+                <div class="col-3 car-item">
+                    <div class="section-bottom">
+                        <div class="car-1">
+                            <img src="fc1.png" alt="car">
+                        </div>
+                        <div class="featured-model-info">
+                            <p>model: 2017 <span class="featured-mi-span">3100 mi</span> <span class="featured-hp-span">240HP</span> automatic</p>
+                        </div>
+                    </div>
                     <div class="featured-cars-txt">
-                        <h2><a href="cars/bmw-series-3-wagon.html">BMW 6 Series Gran Coupe</a></h2>
+                        <h2><a href="#">BMW 6-series gran coupe</a></h2>
                         <h3>₹7,423,785</h3>
-                        <p>The BMW 6 Series Gran Coupe is luxurious and sporty.</p>
+                        <p>The BMW 6 Series Gran Coupe is a luxurious and sporty four-door coupe...</p>
                     </div>
                 </div>
-                <div class="col-3 featured-car">
-                    <img src="fc2.png" alt="Chevrolet Camaro">
+
+                <div class="col-3 car-item">
+                    <div class="section-bottom">
+                        <div class="car-2">
+                            <img src="fc2.png" alt="car">
+                        </div>
+                        <div class="featured-model-info">
+                            <p>model: 2017 <span class="featured-mi-span">3100 mi</span> <span class="featured-hp-span">240HP</span> automatic</p>
+                        </div>
+                    </div>
                     <div class="featured-cars-txt">
-                        <h2><a href="cars/chevrolet-camaro.html">Chevrolet Camaro WMW20</a></h2>
+                        <h2><a href="#">chevrolet camaro wmv20</a></h2>
                         <h3>₹5,530,725</h3>
-                        <p>American muscle car with powerful engines and sporty design.</p>
+                        <p>The Chevrolet Camaro is a well-known American muscle car...</p>
                     </div>
                 </div>
-                <div class="col-3 featured-car">
-                    <img src="fc3.png" alt="Lamborghini V520">
+
+                <div class="col-3 car-item">
+                    <div class="section-bottom">
+                        <div class="car-3">
+                            <img src="fc3.png" alt="car">
+                        </div>
+                        <div class="featured-model-info">
+                            <p>model: 2017 <span class="featured-mi-span">3100 mi</span> <span class="featured-hp-span">240HP</span> automatic</p>
+                        </div>
+                    </div>
                     <div class="featured-cars-txt">
-                        <h2><a href="cars/lamborghini-v520.html">Lamborghini V520</a></h2>
+                        <h2><a href="#">lamborghini v520</a></h2>
                         <h3>₹10,398,750</h3>
-                        <p>High-performance Italian supercar with luxurious features.</p>
+                        <p>Lamborghini is a prestigious Italian automaker renowned for producing high-performance sports cars...</p>
                     </div>
                 </div>
-                <div class="col-3 featured-car">
-                    <img src="fc4.png" alt="Audi A3 Sedan">
+
+                <div class="col-3 car-item">
+                    <div class="section-bottom">
+                        <div class="car-4">
+                            <img src="fc4.png" alt="car">
+                        </div>
+                        <div class="featured-model-info">
+                            <p>model: 2017 <span class="featured-mi-span">3100 mi</span> <span class="featured-hp-span">240HP</span> automatic</p>
+                        </div>
+                    </div>
                     <div class="featured-cars-txt">
-                        <h2><a href="cars/audi-a3-sedan.html">Audi A3 Sedan</a></h2>
+                        <h2><a href="#">audi a3 sedan</a></h2>
                         <h3>$95,500</h3>
-                        <p>Luxury German sedan with advanced technology and performance.</p>
+                        <p>Audi is a renowned German automaker known for its luxury vehicles...</p>
                     </div>
                 </div>
             </div>
@@ -266,11 +300,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="scroll-Top">
-        <div class="return-to-top">
-            <a href="#home"><i class="fa fa-arrow-up"></i></a>
         </div>
     </div>
 </footer>
