@@ -1,150 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Carvila</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
 <section id="home">
     <div class="header">
-        <div class="nav">
-            <div class="container">
-                <div class="row column">
-                    <div class="col-4">
-                        <div class="logo">
-                            <a href="index.html">Carvila</a>
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <div class="content">
-                            <ul>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#service">Service</a></li>
-                                <li><a href="#new-cars">New Cars</a></li>
-                                <li><a href="#features">Featured Cars</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
+        <div class="container">
+            <div class="row column">
+                <div class="col-4">
+                    <div class="logo">
+                        <a href="#">Carvila</a>
                     </div>
                 </div>
-                <div class="welcome-hero-txt">
-                    <h2>Get your desired car at a reasonable price</h2>
-                    <p>A trusted online platform for buying cars visited by millions of verified buyers.</p>
-                    <button class="welcome-btn"><a href="#contact"><b>Contact Us</b></a></button>
+                <div class="col-8">
+                    <div class="content">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#new-cars">New Cars</a></li>
+                            <li><a href="#features">Featured Cars</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+            <div class="welcome-hero-txt">
+                <h2>Get your desired car at a reasonable price</h2>
+                <p>A trusted online platform for buying cars visited by millions of verified buyers.</p>
+                <button class="welcome-btn"><a href="#contact">Contact Us</a></button>
             </div>
         </div>
     </div>
 </section>
 
-<section id="service" class="service">
+<section id="service">
     <div class="container">
-        <div class="service-content">
-            <div class="row">
-                <div class="col-4">
-                    <div class="single-service-item">
-                        <div class="single-service-icon"><i class="fa fa-car"></i></div>
-                        <h2><a href="#">Largest dealership of cars</a></h2>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                    </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="single-service-item">
+                    <div class="single-service-icon"><i class="fa fa-car"></i></div>
+                    <h2>Largest dealership of cars</h2>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
                 </div>
-                <div class="col-4">
-                    <div class="single-service-item">
-                        <div class="single-service-icon"><i class="fa fa-wrench"></i></div>
-                        <h2><a href="#">Unlimited repair warranty</a></h2>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                    </div>
+            </div>
+            <div class="col-4">
+                <div class="single-service-item">
+                    <div class="single-service-icon"><i class="fa fa-wrench"></i></div>
+                    <h2>Unlimited repair warranty</h2>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
                 </div>
-                <div class="col-4">
-                    <div class="single-service-item">
-                        <div class="single-service-icon"><i class="fa fa-money"></i></div>
-                        <h2><a href="#">Insurance support</a></h2>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                    </div>
+            </div>
+            <div class="col-4">
+                <div class="single-service-item">
+                    <div class="single-service-icon"><i class="fa fa-money"></i></div>
+                    <h2>Insurance support</h2>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="new-cars" class="new-cars">
+<section id="new-cars">
     <div class="container">
         <div class="section-header">
             <p>Checkout <span>the</span> latest cars</p>
             <h2>Newest Cars</h2>
         </div>
-        <div class="new-cars-content">
-            <div class="single-new-cars-item">
-                <div class="row">
-                    <div class="col-7">
-                        <div class="new-cars-img">
-                            <img src="ncm2.png" alt="BMW Series-3 Wagon">
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="new-cars-txt">
-                            <h2><a href="bmw-series-3-wagon.html">BMW Series-3 Wagon</a></h2>
-                            <p>The BMW Series 3 Wagon, also known as the BMW 3 Series Touring, is versatile and sporty.</p>
-                            <p class="new-cars-para2">Known for its precise steering and balanced handling...</p>
-                            <button class="welcome-btn new-cars-btn" onclick="window.location.href='bmw-series-3-wagon.html'">View Details</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="single-new-cars-item">
-                <div class="row">
-                    <div class="col-5">
-                        <div class="new-cars-txt">
-                            <h2><a href="chevrolet-camaro.html">Chevrolet Camaro ZA100</a></h2>
-                            <p>The Chevrolet Camaro is a well-known American muscle car...</p>
-                            <p class="new-cars-para2">Known for its aggressive performance and handling...</p>
-                            <button class="welcome-btn new-cars-btn" onclick="window.location.href='chevrolet-camaro.html'">View Details</button>
-                        </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="new-cars-img">
-                            <img src="ncm1.png" alt="Chevrolet Camaro">
-                        </div>
-                    </div>
-                </div>
+        <div class="single-new-cars-item row">
+            <div class="col-7">
+                <img src="ncm2.png" alt="BMW Series-3 Wagon">
             </div>
-
-            <div class="single-new-cars-item">
-                <div class="row">
-                    <div class="col-7">
-                        <div class="new-cars-img">
-                            <img src="ncm3.png" alt="BMW Series-3 Wagon 2">
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="new-cars-txt">
-                            <h2><a href="bmw-series-3-wagon2.html">BMW Series-3 Wagon</a></h2>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                            <p class="new-cars-para2">Sed ut persp unde omnis iste natus error sit voluptatem...</p>
-                            <button class="welcome-btn new-cars-btn" onclick="window.location.href='bmw-series-3-wagon2.html'">View Details</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-5 new-cars-txt">
+                <h2><a href="bmw-series-3-wagon.html">BMW Series-3 Wagon</a></h2>
+                <p>The BMW Series 3 Wagon, also known as the BMW 3 Series Touring, is versatile and sporty.</p>
+                <p>Known for its precise steering and balanced handling...</p>
+                <button class="welcome-btn" onclick="window.location.href='bmw-series-3-wagon.html'">View Details</button>
             </div>
-
         </div>
+
+        <div class="single-new-cars-item row">
+            <div class="col-5 new-cars-txt">
+                <h2><a href="chevrolet-camaro.html">Chevrolet Camaro ZA100</a></h2>
+                <p>The Chevrolet Camaro is a well-known American muscle car...</p>
+                <p>Known for its aggressive performance and handling...</p>
+                <button class="welcome-btn" onclick="window.location.href='chevrolet-camaro.html'">View Details</button>
+            </div>
+            <div class="col-7">
+                <img src="ncm1.png" alt="Chevrolet Camaro">
+            </div>
+        </div>
+
+        <div class="single-new-cars-item row">
+            <div class="col-7">
+                <img src="ncm3.png" alt="BMW Series-3 Wagon 2">
+            </div>
+            <div class="col-5 new-cars-txt">
+                <h2><a href="bmw-series-3-wagon2.html">BMW Series-3 Wagon</a></h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <p>Sed ut persp unde omnis iste natus error sit voluptatem...</p>
+                <button class="welcome-btn" onclick="window.location.href='bmw-series-3-wagon2.html'">View Details</button>
+            </div>
+        </div>
+
     </div>
 </section>
 
-<section id="features" class="features">
+<section id="features">
     <div class="container">
         <div class="section-header">
             <p>Check out <span>the</span> latest cars</p>
             <h2>Featured Cars</h2>
-        </div>
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search cars...">
         </div>
         <div class="feature-column">
             <div class="col-3">
@@ -155,7 +129,6 @@
                     <p>₹7,423,785</p>
                 </div>
             </div>
-
             <div class="col-3">
                 <img src="ncm1.png" alt="Chevrolet Camaro">
                 <div class="featured-cars-txt">
@@ -164,7 +137,6 @@
                     <p>₹5,530,725</p>
                 </div>
             </div>
-
             <div class="col-3">
                 <img src="ncm3.png" alt="Lamborghini V520">
                 <div class="featured-cars-txt">
@@ -173,108 +145,24 @@
                     <p>₹10,398,750</p>
                 </div>
             </div>
-
             <div class="col-3">
                 <img src="ncm1.png" alt="Audi A3 Sedan">
                 <div class="featured-cars-txt">
                     <h2><a href="audi-a3-sedan.html">Audi A3 Sedan</a></h2>
                     <h3>2017 | 3100 mi | 240HP | Automatic</h3>
-                    <p>₹95,500</p>
+                    <p>$95,500</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer id="contact" class="contact">
+<footer id="contact">
     <div class="container">
-        <div class="footer-top">
-            <div class="row">
-                <div class="col-3">
-                    <div class="single-footer-widget">
-                        <div class="footer-logo"><a href="index.html">Carvilla</a></div>
-                        <p>Ased do eiusm tempor incidi ut labore et dolore magnaian aliqua.</p>
-                        <div class="footer-contact">
-                            <p>info@themesine.com</p>
-                            <p>+91 2563154554</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="single-footer-widget">
-                        <h2>About Devloon</h2>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="single-footer-widget">
-                        <h2>Top Brands</h2>
-                        <div class="row">
-                            <div class="col-7">
-                                <ul>
-                                    <li><a href="#">BMW</a></li>
-                                    <li><a href="#">Lamborghini</a></li>
-                                    <li><a href="#">Camaro</a></li>
-                                    <li><a href="#">Audi</a></li>
-                                    <li><a href="#">Infiniti</a></li>
-                                    <li><a href="#">Nissan</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-5">
-                                <ul>
-                                    <li><a href="#">Ferrari</a></li>
-                                    <li><a href="#">Porsche</a></li>
-                                    <li><a href="#">Land Rover</a></li>
-                                    <li><a href="#">Aston Martin</a></li>
-                                    <li><a href="#">Mercedes</a></li>
-                                    <li><a href="#">Opel</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="single-footer-widget">
-                        <h2>Newsletter</h2>
-                        <div class="footer-newsletter">
-                            <p>Subscribe to get latest news, updates and information.</p>
-                        </div>
-                        <div class="hm-foot-email">
-                            <div class="foot-email-box">
-                                <input type="text" class="form-control" placeholder="Add Email">
-                            </div>
-                            <div class="foot-email-subscribe">
-                                <a href="#"><i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="row">
-                <div class="col-6">
-                    <p>© copyright. Designed and developed by <a href="#">Kunal</a>.</p>
-                </div>
-                <div class="col-6">
-                    <div class="footer-social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>	
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>	
-                    </div>
-                </div>
-            </div>
-        </div>
+        <p>© 2025 Carvila. Designed by Kunal.</p>
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
