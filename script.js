@@ -1,18 +1,14 @@
-const searchInput = document.getElementById("searchInput");
+const searchInput = document.getElementById('search-input');
+const featuredCars = document.querySelectorAll('.single-featured-car');
 
-searchInput.addEventListener("input", function() {
-  const filter = this.value.toLowerCase();
-
-  
-  const carCards = document.querySelectorAll(".feature-column .col-3");
-
-  carCards.forEach(card => {
-    const carName = card.querySelector("h2 a").innerText.toLowerCase();
-
-    if (carName.includes(filter)) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
-  });
+searchInput.addEventListener('keyup', function () {
+    const query = this.value.toLowerCase();
+    featuredCars.forEach(car => {
+        const carName = car.querySelector('h2 a').textContent.toLowerCase();
+        if (carName.includes(query)) {
+            car.style.display = 'block';
+        } else {
+            car.style.display = 'none';
+        }
+    });
 });
