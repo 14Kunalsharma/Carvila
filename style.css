@@ -2,244 +2,106 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 ul li {
-    display: inline-block;
+    display: inline;
     margin-right: 20px;
 }
-
 a {
     text-decoration: none;
-    color: inherit;
-}
-
-.header {
-    background-image: url("welcome-banner.jpg");
-    background-size: cover;
-    background-position: center;
-    position: relative;
     color: #fff;
 }
-
-.nav .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header {
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
 }
-
 .logo a {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
-    color: #fff;
-    font-family: serif;
-    text-transform: uppercase;
 }
-
-.content ul li a {
-    color: #fff;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    transition: 0.3s;
+.content ul {
+    text-align: right;
 }
-
-.content ul li a:hover {
-    color: blue;
-}
-
 .welcome-hero-txt {
     text-align: center;
-    padding: 150px 20px;
+    padding: 100px 20px;
 }
-
 .welcome-hero-txt h2 {
-    font-size: 40px;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-size: 36px;
 }
-
 .welcome-hero-txt p {
-    font-size: 16px;
-    font-weight: 500;
-    margin: 20px 0;
+    font-size: 18px;
+    margin: 10px 0;
 }
-
 .welcome-btn {
-    background-color: rgb(62, 109, 170);
+    padding: 10px 25px;
+    background-color: rgb(62,109,170);
     color: #fff;
-    padding: 10px 40px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
-
 .welcome-btn:hover {
     background-color: blue;
 }
-
-.service, .new-cars, .features {
-    padding: 50px 0;
-}
-
-.single-service-item {
+#service .single-service-item {
     text-align: center;
-    padding: 30px 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.single-service-item:hover {
-    background-color: #1e73be;
-    color: #fff;
-}
-
-.single-service-icon {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.new-cars-content .row {
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.new-cars-img img {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.new-cars-txt {
     padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 6px;
 }
-
+#new-cars .single-new-cars-item {
+    margin-bottom: 40px;
+}
+#new-cars img {
+    width: 100%;
+    border-radius: 6px;
+}
 .feature-column {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px 0;
 }
-
 .feature-column .col-3 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: stretch;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 15px;
+    border-radius: 6px;
     background-color: #fff;
-    border-radius: 8px;
-    transition: 0.3s;
 }
-
-.feature-column .col-3:hover {
-    background-color: #1e73be;
-    color: #fff;
-}
-
 .feature-column .col-3 img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 15px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
 }
-
-.featured-cars-txt h2 a {
+.featured-cars-txt h2 {
     font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-    text-align: center;
-    color: #000;
+    margin: 5px 0;
+    color: black;
 }
-
 .featured-cars-txt h3 {
     font-size: 14px;
-    text-align: center;
-    margin-bottom: 10px;
+    color: #555;
+    margin-bottom: 5px;
 }
-
 .featured-cars-txt p {
-    font-size: 16px;
     font-weight: bold;
-    text-align: center;
+    color: #000;
 }
-
-.search-container {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#searchInput {
-    width: 50%;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-.contact {
-    background-color: #2a2d54;
+footer {
+    background-color: #222;
     color: #fff;
-    padding: 50px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: blue;
-}
-
-.footer-top {
-    padding-bottom: 50px;
-}
-
-.single-footer-widget {
-    margin-bottom: 30px;
-}
-
-.single-footer-widget ul li {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.single-footer-widget h2 {
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.footer-social a {
-    margin-right: 10px;
-    font-size: 18px;
-}
-
-@media screen and (max-width: 768px) {
-    .content ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-    .new-cars-content .row {
-        flex-direction: column;
-    }
-    #searchInput {
-        width: 90%;
-    }
+    padding: 20px 0;
+    text-align: center;
 }
