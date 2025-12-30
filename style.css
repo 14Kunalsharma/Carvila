@@ -6,6 +6,8 @@ ul li {
 }
 .header {
     background-image: url("welcome-banner.jpg");
+    background-size: cover;
+    background-position: center;
     padding-bottom: 250px;
 }
 .column {
@@ -53,6 +55,7 @@ ul li {
     background-color: rgb(62, 109, 170);
     color: #fff;
     border-color: rgb(62, 109, 170);
+    cursor: pointer;
 }
 .welcome-btn:hover {
     background-color: blue;
