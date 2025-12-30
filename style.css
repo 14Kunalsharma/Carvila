@@ -1,122 +1,133 @@
-ul li{
+ul li {
     display: inline;
 }
-.container .column{
+.container .column {
     z-index: 99;
 }
-.header{
+.header {
     background-image: url("welcome-banner.jpg");
     padding-bottom: 250px;
 }
-.column{
+.column {
     position: fixed;
     width: 85%;
     background-color: black;
 }
-.content a{
+.content a {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
     padding-right: 50px;
 }
-.content a:hover{
-    color:blue;
+.content a:hover {
+    color: blue;
 }
-.logo a{
+.logo a {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
     font-size: 25px;
     font-family: serif;
 }
-.welcome-hero-txt{
+.welcome-hero-txt {
     text-align: center;
     padding: 200px 100px;
 }
-.welcome-hero-txt h2{
+.welcome-hero-txt h2 {
     text-transform: uppercase;
     font-weight: 800;
     font-size: 40px;
     color: #fff;
 }
-.welcome-hero-txt p{
+.welcome-hero-txt p {
     font-weight: 500;
     font-size: 15px;
     color: #fff;
 }
-.header .row{
+.header .row {
     padding: 20px;
 }
-.welcome-btn{
+.welcome-btn {
     padding: 10px 40px;
     text-transform: capitalize;
     background-color: rgb(62, 109, 170);
     color: #fff;
     border-color: rgb(62, 109, 170);
 }
-.welcome-btn:hover{
+.welcome-btn:hover {
     background-color: blue;
 }
-.welcome-btn a{
+.welcome-btn a {
     color: #fff;
     text-decoration: none;
 }
-.single-service-item{
-   border: 1px solid; 
-   text-align: center;
-   padding-bottom: 30px;
+.single-service-item {
+    border: 1px solid;
+    text-align: center;
+    padding-bottom: 30px;
 }
-.single-service-item h2 a{
+.single-service-item h2 a {
     text-decoration: none;
     text-transform: capitalize;
-    color:black;
+    color: black;
     font-size: 25px;
 }
-.single-service-icon{
+.single-service-icon {
     font-size: 40px;
     padding: 50px 0;
 }
-.single-service-item:hover{
+.single-service-item:hover {
     color: #fff;
     background-color: blue;
 }
-.single-service-item a:hover{
+.single-service-item a:hover {
     color: #fff;
     background-color: blue;
 }
-#service{
+#service {
     padding-top: 100px;
 }
-span{
+span {
     text-transform: none;
 }
-.section-header{
+.section-header {
     text-align: center;
     text-transform: capitalize;
     padding: 50px;
 }
-.new-cars-txt a{
+.new-cars-txt a {
     text-decoration: none;
     color: black;
     text-transform: capitalize;
 }
-.single-new-cars-item{
+.single-new-cars-item {
     padding-bottom: 50px;
 }
-#new-cars{
+#new-cars {
     padding-top: 50px;
 }
-#features{
+#features {
     padding-top: 50px;
 }
-.car-1{
-    border-bottom:1px solid;
-    padding:30px;
+.search-container {
+    text-align: center;
+    margin-bottom: 30px;
 }
-.section-bottom{
+#searchInput {
+    width: 50%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.car-1, .car-2, .car-3, .car-4 {
+    border-bottom: 1px solid;
+    padding: 30px;
+}
+.section-bottom {
     border: 1px solid;
 }
-.featured-model-info p{
+.featured-model-info p {
     font-size: 12px;
     color: #8c92a0;
     text-transform: capitalize;
@@ -124,29 +135,39 @@ span{
     padding-top: 10px;
     line-height: 30px;
 }
-.car-2{
-    border-bottom:1px solid;
-    padding:30px;
-    padding-top: 50px;
+.feature-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
 }
-.car-3{
-    border-bottom:1px solid;
-    padding:40px;
+.feature-column .col-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
 }
-.car-4{
-    border-bottom:1px solid;
-    padding:30px;
+.feature-column .col-3 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
-.feature-column{
-    display: inline;
+.featured-cars-txt h2 a,
+.featured-cars-txt h3,
+.featured-cars-txt p {
+    margin: 5px 0;
 }
-.featured-cars-txt h2 a{
+.featured-cars-txt h2 a {
     text-decoration: none;
     text-transform: capitalize;
     font-size: 20px;
-    color:black ;
+    color: black;
 }
-.featured-cars-txt h3{
+.featured-cars-txt h3 {
     font-size: 15px;
 }
 .contact {
@@ -158,7 +179,9 @@ span{
 .single-footer-widget {
     margin-bottom: 40px;
 }
-.footer-logo a, .footer-logo a:hover, .footer-logo a:focus {
+.footer-logo a,
+.footer-logo a:hover,
+.footer-logo a:focus {
     display: inline-block;
     color: #fff;
     font-size: 24px;
@@ -178,11 +201,8 @@ span{
     margin: 0;
     color: #d1d7e9;
 }
-.footer-social a:hover{
+.footer-social a:hover {
     color: #fff;
-}
-.single-footer-widget {
-    margin-bottom: 40px;
 }
 .single-footer-widget h2 {
     font-size: 14px;
@@ -195,7 +215,7 @@ span{
     padding-left: 0;
 }
 .single-footer-widget ul li {
-    display:block;
+    display: block;
 }
 .single-footer-widget ul li a {
     font-size: 14px;
@@ -205,11 +225,11 @@ span{
     text-decoration: none;
     text-transform: capitalize;
 }
-.return-to-top{
+.return-to-top {
     display: block;
-    text-align:right;
+    text-align: right;
 }
-.fa-arrow-up{
+.fa-arrow-up {
     border: 1px hidden;
     color: #fff;
     background-color: blue;
@@ -220,10 +240,10 @@ span{
     position: fixed;
     border-radius: 100%;
 }
-.fa-arrow-up:hover{
+.fa-arrow-up:hover {
     color: blue;
     background-color: #fff;
 }
-.footer-copyright a{
+.footer-copyright a {
     text-decoration: none;
 }
