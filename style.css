@@ -1,121 +1,189 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 ul li {
-    display: inline;
+    display: inline-block;
+    margin-right: 20px;
 }
-.container .column {
-    z-index: 99;
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
+
 .header {
     background-image: url("welcome-banner.jpg");
     background-size: cover;
     background-position: center;
-    padding-bottom: 250px;
-}
-.column {
-    position: fixed;
-    width: 85%;
-    background-color: black;
-}
-.content a {
-    text-decoration: none;
-    text-transform: uppercase;
+    position: relative;
     color: #fff;
-    padding-right: 50px;
 }
-.content a:hover {
+
+.nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo a {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    font-family: serif;
+    text-transform: uppercase;
+}
+
+.content ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.content ul li a:hover {
     color: blue;
 }
-.logo a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 25px;
-    font-family: serif;
-}
+
 .welcome-hero-txt {
     text-align: center;
-    padding: 200px 100px;
+    padding: 150px 20px;
 }
+
 .welcome-hero-txt h2 {
-    text-transform: uppercase;
-    font-weight: 800;
     font-size: 40px;
-    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
 }
+
 .welcome-hero-txt p {
+    font-size: 16px;
     font-weight: 500;
-    font-size: 15px;
-    color: #fff;
+    margin: 20px 0;
 }
-.header .row {
-    padding: 20px;
-}
+
 .welcome-btn {
-    padding: 10px 40px;
-    text-transform: capitalize;
     background-color: rgb(62, 109, 170);
     color: #fff;
-    border-color: rgb(62, 109, 170);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
+
 .welcome-btn:hover {
     background-color: blue;
 }
-.welcome-btn a {
-    color: #fff;
-    text-decoration: none;
-}
-.single-service-item {
-    border: 1px solid;
-    text-align: center;
-    padding-bottom: 30px;
-}
-.single-service-item h2 a {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: black;
-    font-size: 25px;
-}
-.single-service-icon {
-    font-size: 40px;
+
+.service, .new-cars, .features {
     padding: 50px 0;
 }
+
+.single-service-item {
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
 .single-service-item:hover {
+    background-color: #1e73be;
     color: #fff;
-    background-color: blue;
 }
-.single-service-item a:hover {
-    color: #fff;
-    background-color: blue;
+
+.single-service-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
-#service {
-    padding-top: 100px;
-}
-span {
-    text-transform: none;
-}
+
 .section-header {
     text-align: center;
-    text-transform: capitalize;
-    padding: 50px;
+    margin-bottom: 50px;
 }
-.new-cars-txt a {
-    text-decoration: none;
-    color: black;
-    text-transform: capitalize;
+
+.new-cars-content .row {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.single-new-cars-item {
-    padding-bottom: 50px;
+
+.new-cars-img img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
 }
-#new-cars {
-    padding-top: 50px;
+
+.new-cars-txt {
+    padding: 20px;
 }
-#features {
-    padding-top: 50px;
+
+.feature-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
 }
+
+.feature-column .col-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.feature-column .col-3:hover {
+    background-color: #1e73be;
+    color: #fff;
+}
+
+.feature-column .col-3 img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.featured-cars-txt h2 a {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+    color: #000;
+}
+
+.featured-cars-txt h3 {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.featured-cars-txt p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .search-container {
     text-align: center;
     margin-bottom: 30px;
 }
+
 #searchInput {
     width: 50%;
     padding: 10px;
@@ -123,130 +191,55 @@ span {
     border: 1px solid #ccc;
     font-size: 16px;
 }
-.car-1, .car-2, .car-3, .car-4 {
-    border-bottom: 1px solid;
-    padding: 30px;
-}
-.section-bottom {
-    border: 1px solid;
-}
-.featured-model-info p {
-    font-size: 12px;
-    color: #8c92a0;
-    text-transform: capitalize;
-    text-align: center;
-    padding-top: 10px;
-    line-height: 30px;
-}
-.feature-column {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px 0;
-}
-.feature-column .col-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-}
-.feature-column .col-3 img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-.featured-cars-txt h2 a,
-.featured-cars-txt h3,
-.featured-cars-txt p {
-    margin: 5px 0;
-}
-.featured-cars-txt h2 a {
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 20px;
-    color: black;
-}
-.featured-cars-txt h3 {
-    font-size: 15px;
-}
+
 .contact {
-    background: #2a2d54;
-}
-.footer-top {
-    padding: 112px 0 72px;
-}
-.single-footer-widget {
-    margin-bottom: 40px;
-}
-.footer-logo a,
-.footer-logo a:hover,
-.footer-logo a:focus {
-    display: inline-block;
+    background-color: #2a2d54;
     color: #fff;
-    font-size: 24px;
-    letter-spacing: 3px;
-    font-family: 'Rufina', serif;
-    font-weight: 700;
-    text-transform: uppercase;
+    padding: 50px 0;
+}
+
+footer a {
+    color: #fff;
     text-decoration: none;
 }
-.single-footer-widget p {
-    font-size: 14px;
-    color: #eeeff6;
-    max-width: 300px;
-    margin: 40px 0 20px;
+
+footer a:hover {
+    color: blue;
 }
-.footer-contact p {
-    margin: 0;
-    color: #d1d7e9;
+
+.footer-top {
+    padding-bottom: 50px;
 }
-.footer-social a:hover {
-    color: #fff;
+
+.single-footer-widget {
+    margin-bottom: 30px;
 }
-.single-footer-widget h2 {
-    font-size: 14px;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 43px;
-}
-.single-footer-widget ul {
-    list-style: none;
-    padding-left: 0;
-}
+
 .single-footer-widget ul li {
     display: block;
+    margin-bottom: 10px;
 }
-.single-footer-widget ul li a {
-    font-size: 14px;
-    color: #cfd0e3;
-    font-weight: 300;
-    padding-bottom: 13px;
-    text-decoration: none;
-    text-transform: capitalize;
+
+.single-footer-widget h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
-.return-to-top {
-    display: block;
-    text-align: right;
+
+.footer-social a {
+    margin-right: 10px;
+    font-size: 18px;
 }
-.fa-arrow-up {
-    border: 1px hidden;
-    color: #fff;
-    background-color: blue;
-    padding: 10px;
-    margin: 10px 10px;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    border-radius: 100%;
-}
-.fa-arrow-up:hover {
-    color: blue;
-    background-color: #fff;
-}
-.footer-copyright a {
-    text-decoration: none;
+
+@media screen and (max-width: 768px) {
+    .content ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .new-cars-content .row {
+        flex-direction: column;
+    }
+    #searchInput {
+        width: 90%;
+    }
 }
