@@ -23,6 +23,8 @@ ul li {
 }
 .content a:hover {
     color: blue;
+    text-decoration:none;
+    text-color:white;
 }
 .logo a {
     text-decoration: none;
@@ -271,3 +273,4 @@ span {
     color: blue;
     cursor: pointer;
 }
+
