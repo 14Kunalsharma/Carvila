@@ -7,73 +7,113 @@
 
 body {
     line-height: 1.6;
+    background: #fff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
 }
 
 .header {
-    background: #111;
+    background: #222;
     color: #fff;
-    padding-bottom: 120px;
+    padding: 10px 0;
+}
+
+.nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo a {
-    color: #fff;
-    font-size: 26px;
-    text-decoration: none;
+    font-size: 28px;
     font-weight: bold;
+    color: #fff;
 }
 
 .content ul {
-    list-style: none;
     display: flex;
-    justify-content: flex-end;
-    gap: 25px;
+    gap: 20px;
 }
 
 .content ul li a {
     color: #fff;
-    text-decoration: none;
-    font-size: 15px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.content ul li a:hover {
+    background: #fff;
+    color: #222;
+    border-radius: 5px;
 }
 
 .welcome-hero-txt {
     text-align: center;
-    margin-top: 80px;
+    padding: 80px 0 50px 0;
 }
 
 .welcome-hero-txt h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.welcome-hero-txt p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .welcome-btn {
-    padding: 10px 30px;
-    background: #0d6efd;
-    border: none;
+    background: #ff4d4d;
     color: #fff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 .welcome-btn a {
     color: #fff;
-    text-decoration: none;
+}
+
+.welcome-btn:hover {
+    background: #e60000;
 }
 
 .service {
     padding: 80px 0;
+    background: #f9f9f9;
+    text-align: center;
 }
 
 .single-service-item {
-    text-align: center;
-    padding: 30px;
-    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.single-service-item:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .single-service-icon {
-    font-size: 40px;
+    font-size: 50px;
+    color: #ff4d4d;
     margin-bottom: 15px;
-    color: #0d6efd;
 }
 
-.new-cars {
+.new-cars, .features {
     padding: 80px 0;
 }
 
@@ -82,118 +122,155 @@ body {
     margin-bottom: 50px;
 }
 
-.new-cars-img img {
-    width: 100%;
-    height: auto;
+.section-header p {
+    font-size: 18px;
+    color: #ff4d4d;
+    margin-bottom: 10px;
 }
 
-.new-cars-txt h2 a {
-    text-decoration: none;
-    color: #000;
+.section-header h2 {
+    font-size: 36px;
+}
+
+.new-cars-content .single-new-cars-item {
+    margin-bottom: 50px;
+}
+
+.new-cars-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.new-cars-txt h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.new-cars-txt p {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .new-cars-btn {
-    margin-top: 15px;
-}
-
-.features {
-    padding: 80px 0;
-    background: #f8f9fa;
+    margin-top: 10px;
 }
 
 .search-container {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #searchInput {
+    width: 50%;
     padding: 10px;
-    width: 300px;
+    font-size: 16px;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.feature-column .col-3 {
-    display: flex;
-    flex-direction: column;
-}
-
-.section-bottom {
-    border: 1px solid #ddd;
-    padding: 15px;
+.featured-car {
     text-align: center;
-    height: 100%;
+    margin-bottom: 30px;
 }
 
-.section-bottom img {
+.featured-car img {
     width: 100%;
-    height: 160px;
-    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.featured-model-info {
-    font-size: 13px;
-    margin-top: 10px;
+.featured-car h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
 }
 
-.featured-cars-txt {
-    border: 1px solid #ddd;
-    border-top: none;
-    padding: 15px;
-    height: 100%;
+.featured-car p {
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
-.featured-cars-txt h2 a {
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-}
-
-.featured-cars-txt h3 {
-    color: #0d6efd;
-    margin: 10px 0;
-}
-
-.contact {
-    background: #2a2d54;
+footer {
+    background: #222;
     color: #fff;
-    padding-top: 60px;
+    padding: 50px 0 20px 0;
 }
 
-.footer-logo a {
+footer a {
     color: #fff;
-    font-size: 22px;
-    text-decoration: none;
 }
 
-.single-footer-widget h2 {
+footer .single-footer-widget {
+    margin-bottom: 30px;
+}
+
+footer .footer-logo a {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer h2 {
     font-size: 18px;
     margin-bottom: 15px;
 }
 
-.single-footer-widget ul {
-    list-style: none;
-    padding: 0;
+footer ul li {
+    margin-bottom: 10px;
 }
 
-.single-footer-widget ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
+footer .footer-contact p {
+    margin-bottom: 10px;
+}
+
+footer .footer-newsletter p {
+    margin-bottom: 10px;
+}
+
+.hm-foot-email {
+    display: flex;
+    margin-top: 10px;
+}
+
+.hm-foot-email input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.foot-email-subscribe {
+    background: #ff4d4d;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
 
 .footer-social a {
-    color: #fff;
     margin-left: 10px;
+    color: #fff;
     font-size: 18px;
 }
 
-.footer-copyright {
-    border-top: 1px solid rgba(255,255,255,0.2);
-    margin-top: 40px;
-    padding: 20px 0;
+#scroll-Top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
 }
 
 .return-to-top a {
+    background: #ff4d4d;
     color: #fff;
-    font-size: 20px;
+    padding: 10px 12px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.return-to-top a:hover {
+    background: #e60000;
 }
