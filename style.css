@@ -49,19 +49,23 @@ ul li {
 .header .row {
     padding: 20px;
 }
-.welcome-btn {
-    padding: 10px 40px;
-    text-transform: capitalize;
-    background-color: rgb(62, 109, 170);
-    color: #fff;
-    border-color: rgb(62, 109, 170);
-    border-radius: 5px;
+.welcome-btn a {
+    color: black;
     text-decoration: none;
 }
-.welcome-btn:hover {
-    background-color: blue;
-    color: #fff;
+
+.welcome-btn {
+    background-color: white;
+    border: none;
+    padding: 10px 40px;
+    text-transform: capitalize;
+    cursor: pointer;
 }
+
+.welcome-btn:hover {
+    background-color: #f0f0f0;
+}
+
 .single-service-item {
     border: 1px solid;
     text-align: center;
@@ -271,5 +275,6 @@ span {
     color: blue;
     cursor: pointer;
 }
+
 
 
