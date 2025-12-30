@@ -64,7 +64,7 @@ ul li {
 
 .welcome-btn:hover {
     background-color: blue;
-    color:white;
+    color: #fff;
 }
 
 .single-service-item {
@@ -276,6 +276,7 @@ span {
     color: blue;
     cursor: pointer;
 }
+
 
 
 
